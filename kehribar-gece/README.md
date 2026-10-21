@@ -50,3 +50,17 @@ Standart radius 2 px, küçük 1 px, büyük 3 px; diğer büyük varyantlar en 
 - `maintenance.html`: planlı bakım örneği; canlı durum veya geri sayım içermez.
 
 Yeni sayfaların ortak düzeni `css/pages.css`, menü davranışı `js/layout.js` içindedir. Müşteri verileri `js/customers.js` içinde örnektir. Sayfa yenilenince eklenen kayıtlar kaybolur. Üretim kullanımı için kimlik doğrulama, API, kalıcı kayıt ve gerçek hata yönlendirmeleri ayrıca bağlanmalıdır.
+
+## Taşınabilir dağıtım paketi
+
+`blank.html`, yalnızca tema CSS'i, tema seçimi ve mobil menü davranışıyla çalışan boş bir başlangıçtır. Demo veri işleyicilerini yüklemez.
+
+Bootstrap depo kökünde şu komut çalıştırılır (Python 3.10+):
+
+```sh
+python3 kehribar-gece/package.py
+```
+
+Çıktı `kehribar-gece/releases/kehribar-gece-0.1.0.zip` ve SHA-256 dosyasıdır. Başka bir çıktı klasörü için `--output-dir /istenen/klasor` kullanılabilir. Paketleme mevcut derlenmiş CSS'i kullanır; Sass değişikliklerinden sonra önce `build.mjs` çalıştırılmalıdır.
+
+ZIP içindeki sayfalar bağımsız `assets/` yollarına çevrilir; Bootstrap bundle, sourcemap ve lisanslar da eklenir. Paketin kökündeki README, `PACKAGE-README.md` dosyasından üretilir. `templates/go/` içindeki `.tmpl` dosyaları isteğe bağlı Go html/template örneğidir; başka şablon motorları için blank.html ortak layout'a ayrılabilir. Paketin çalışması kaynak Bootstrap deposuna veya harici CDN'e bağlı değildir.
