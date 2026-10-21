@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="tr" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#121416">
+  <title>Kehribar Gece · Yönetim paneli</title>
+  <link rel="icon" href="data:,">
+  <link rel="preload" href="fonts/source-sans-3/SourceSans3-variable.ttf" as="font" type="font/ttf" crossorigin>
+  <script src="js/theme.js"></script>
+  <link rel="stylesheet" href="css/kehribar-gece.min.css">
+</head>
+<body>
+  <a href="#main" class="kg-skip">İçeriğe geç</a>
+<div id="menu-backdrop" class="kg-backdrop" aria-hidden="true"></div><aside id="sidebar" class="kg-sidebar" aria-label="Ana menü"><a class="kg-brand" href="index.html"><span class="kg-mark" aria-hidden="true">kg</span>kehribar gece<span class="text-primary">.</span></a><p class="kg-label mt-4 mb-2 ps-3">Çalışma alanı</p><nav class="nav flex-column"><a class="nav-link active" href="index.html" aria-current=page><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM8 9h8M8 13h5"/></svg>Genel bakış</a><a class="nav-link " href="examples.html" ><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM8 9h8M8 13h5"/></svg>Örnek sayfalar</a><a class="nav-link " href="customers.html" ><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM8 9h8M8 13h5"/></svg>Müşteriler</a><a class="nav-link " href="invoice.html" ><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM8 9h8M8 13h5"/></svg>Fatura</a><a class="nav-link " href="profile.html" ><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM8 9h8M8 13h5"/></svg>Profil</a><a class="nav-link " href="components.html" ><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM8 9h8M8 13h5"/></svg>Bileşenler</a></nav><p class="kg-label mt-4 mb-2 ps-3">Diğer sayfalar</p><nav class="nav flex-column" aria-label="Diğer örnekler"><a class="nav-link py-1 small" href="login.html">Giriş</a><a class="nav-link py-1 small" href="404.html">404 · Bulunamadı</a><a class="nav-link py-1 small" href="500.html">500 · Sunucu hatası</a><a class="nav-link py-1 small" href="maintenance.html">Bakım</a></nav><div class="kg-sidebar-foot d-flex gap-3 align-items-center"><span class="kg-avatar">MÖ</span><div><strong class="small d-block">Muhammed Özbay</strong><span class="small text-body-secondary">Örnek çalışma alanı</span></div></div></aside>
+  <div class="kg-main">
+    <header class="kg-topbar">
+      <div class="d-flex align-items-center gap-3"><button id="menu-toggle" class="btn btn-outline-secondary btn-sm kg-mobile-toggle" aria-controls="sidebar" aria-expanded="false" aria-label="Menüyü aç">☰</button><span class="text-body-secondary small">Çalışma alanı <span class="mx-2" aria-hidden="true">/</span> <span class="text-body">Genel bakış</span></span></div>
+      <fieldset class="kg-theme-switch">
+        <legend class="visually-hidden">Görünüm</legend>
+        <label><input type="radio" name="theme" value="light"><span>Aydınlık</span></label>
+        <label><input type="radio" name="theme" value="dark"><span>Karanlık</span></label>
+        <label><input type="radio" name="theme" value="system" checked><span>Sistem</span></label>
+      </fieldset>
+    </header>
+    <main id="main" class="kg-content" tabindex="-1">
+      <section id="overview" aria-labelledby="page-title">
+        <div class="d-flex flex-wrap justify-content-between gap-3 align-items-center mb-4">
+          <div><p class="kg-label text-primary mb-2">Kehribar Gece / Yönetim</p><h1 id="page-title" class="kg-title mb-2">Her şey yerli yerinde.</h1><p class="text-body-secondary mb-0">İşlerinin bugünkü görünümü, tek bir yerde.</p></div>
+          <button class="btn btn-primary kg-button-icon px-3" data-bs-toggle="modal" data-bs-target="#new-project"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Yeni kayıt</button>
+        </div>
+        <div class="row g-3 mb-4">
+          <div class="col-6 col-xl-3"><div class="card h-100"><div class="card-body"><p class="text-body-secondary small mb-2">Toplam gelir</p><p class="kg-metric mb-2">₺128.450<span class="fs-6 text-body-secondary">,00</span></p><span class="kg-trend">↗ %12,8</span><span class="text-body-secondary small ms-2">önceki aya göre</span></div></div></div>
+          <div class="col-6 col-xl-3"><div class="card h-100"><div class="card-body"><p class="text-body-secondary small mb-2">Tamamlanan işlem</p><p class="kg-metric mb-2">248</p><span class="kg-trend">↗ %8,2</span><span class="text-body-secondary small ms-2">önceki aya göre</span></div></div></div>
+          <div class="col-6 col-xl-3"><div class="card h-100"><div class="card-body"><p class="text-body-secondary small mb-2">Aktif müşteri</p><p class="kg-metric mb-2">1.024</p><span class="kg-trend">+36</span><span class="text-body-secondary small ms-2">yeni müşteri</span></div></div></div>
+          <div class="col-6 col-xl-3"><div class="card h-100"><div class="card-body"><p class="text-body-secondary small mb-2">Bekleyen işlem</p><p class="kg-metric mb-2">12</p><span class="text-warning small">4 kayıt</span><span class="text-body-secondary small ms-2">inceleme bekliyor</span></div></div></div>
+        </div>
+      </section>
+      <section id="orders" class="card mb-4" aria-labelledby="orders-title">
+        <div class="card-header d-flex flex-wrap gap-3 justify-content-between align-items-center"><div><h2 id="orders-title" class="h5 mb-1">Son işlemler</h2><span class="small text-body-secondary">Örnek veriler · Ekim 2026</span></div><div class="kg-toolbar-search"><label class="visually-hidden" for="order-search">İşlemlerde ara</label><input id="order-search" class="form-control form-control-sm" type="search" placeholder="İsim veya işlem ara…"></div></div>
+        <div class="table-responsive"><table class="table table-hover kg-table mb-0"><caption class="visually-hidden">Müşteri, işlem tutarı ve durum bilgisi içeren örnek işlem listesi</caption><thead><tr><th scope="col">İşlem / Müşteri</th><th scope="col">Tarih</th><th scope="col">Durum</th><th scope="col" class="text-end">Tutar</th></tr></thead><tbody id="orders-body">
+          <tr data-order><td><strong class="d-block fw-semibold">Özgür Yazılım A.Ş.</strong><span class="text-body-secondary small">KG-1048 · Kurumsal üyelik</span></td><td>21 Eki 2026</td><td><span class="kg-status kg-status-success">Tamamlandı</span></td><td class="text-end">₺12.850,00</td></tr>
+          <tr data-order><td><strong class="d-block fw-semibold">Çağrı Şimşek</strong><span class="text-body-secondary small">KG-1047 · Danışmanlık</span></td><td>21 Eki 2026</td><td><span class="kg-status kg-status-warning">Bekliyor</span></td><td class="text-end">₺3.200,00</td></tr>
+          <tr data-order><td><strong class="d-block fw-semibold">İpek Tasarım Atölyesi</strong><span class="text-body-secondary small">KG-1046 · Ekip üyeliği</span></td><td>20 Eki 2026</td><td><span class="kg-status kg-status-success">Tamamlandı</span></td><td class="text-end">₺8.450,00</td></tr>
+          <tr data-order><td><strong class="d-block fw-semibold">Güneş Teknoloji</strong><span class="text-body-secondary small">KG-1045 · Yıllık bakım</span></td><td>20 Eki 2026</td><td><span class="kg-status kg-status-muted">Taslak</span></td><td class="text-end">₺24.000,00</td></tr>
+          <tr id="no-results" hidden><td colspan="4" class="kg-empty">Aramana uygun işlem bulunamadı.</td></tr>
+        </tbody></table></div>
+        <div class="card-footer small text-body-secondary py-3 px-4">Bu ekrandaki tutarlar ve kayıtlar tema örneğidir.</div>
+      </section>
+      <div class="row g-4">
+        <section id="typography" class="col-xl-7" aria-labelledby="type-title"><div class="card h-100"><div class="card-body"><p class="kg-label text-primary">Tipografi</p><h2 id="type-title" class="h4 mb-3">Source Sans 3</h2><p class="fs-5 mb-3">Bilgiye yer açan, gözü yormayan bir yazı.</p><p class="text-body-secondary">İşlem geçmişini inceleyin, müşteri bilgilerini güncelleyin ve raporlarınızı düzenleyin. Türkçe karakterler: ç, ğ, ı, İ, ö, ş, ü.</p><div class="border-top pt-3 mt-4"><div class="d-flex justify-content-between gap-3"><span class="text-body-secondary">Aylık toplam</span><strong style="font-variant-numeric:tabular-nums">₺128.450,00</strong></div><div class="d-flex justify-content-between gap-3 mt-2"><span class="text-body-secondary">Karakter kontrolü</span><span>İl / Işık · 0O · 1Il</span></div></div><p class="small text-body-secondary mt-4 mb-0">Metin 15 px · Tablo 14 px · Başlık 600<br><em>Normal ve italik, yerel font dosyalarından yüklenir.</em></p></div></div></section>
+        <section id="components" class="col-xl-5" aria-labelledby="components-title"><div class="card h-100"><div class="card-body"><p class="kg-label text-primary">Tasarım dili</p><h2 id="components-title" class="h4 mb-4">Az renk, net hiyerarşi.</h2><div class="row g-3 mb-4"><div class="col-6 col-sm-3"><div class="kg-swatch" style="background:#121416"></div><span class="small text-body-secondary">Gece<br>#121416</span></div><div class="col-6 col-sm-3"><div class="kg-swatch" style="background:#ffb300"></div><span class="small text-body-secondary">Kehribar<br>#FFB300</span></div><div class="col-6 col-sm-3"><div class="kg-swatch" style="background:#c4b0e8"></div><span class="small text-body-secondary">Lavanta<br>#C4B0E8</span></div><div class="col-6 col-sm-3"><div class="kg-swatch" style="background:#edc474"></div><span class="small text-body-secondary">Uyarı<br>#EDC474</span></div></div><div class="d-flex flex-wrap gap-2 mb-3"><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#new-project">Birincil işlem</button><a class="btn btn-outline-secondary" href="#orders">İşlemleri gör</a><button class="btn btn-secondary" disabled>Devre dışı</button></div><label class="form-label small" for="sample-select">Rapor dönemi</label><select class="form-select" id="sample-select"><option>Ekim 2026</option><option>Eylül 2026</option><option>Ağustos 2026</option></select></div></div></section>
+      </div>
+      <footer class="kg-footer d-flex flex-wrap justify-content-between gap-2"><span>Kehribar Gece · İlk tema taslağı</span><span>Bootstrap 5.3.8 / Source Sans 3</span></footer>
+    </main>
+  </div>
+  <div class="modal fade" id="new-project" tabindex="-1" aria-labelledby="new-project-title" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><form id="example-form"><div class="modal-header"><h2 class="modal-title fs-5" id="new-project-title">Yeni kayıt örneği</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button></div><div class="modal-body"><p class="text-body-secondary small">Form görünümünü denemek için doldurun. Girilen bilgiler kaydedilmez.</p><label for="record-name" class="form-label">Kayıt adı</label><input class="form-control mb-3" id="record-name" name="name" required maxlength="120" placeholder="Örn. Ekim ayı raporu"><label for="record-email" class="form-label">E-posta</label><input type="email" class="form-control" id="record-email" name="email" required placeholder="ad@ornek.com"></div><div class="modal-footer"><button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Vazgeç</button><button type="submit" class="btn btn-primary">Örneği dene</button></div></form></div></div></div>
+  <div class="toast-container position-fixed bottom-0 end-0 p-3"><div id="saved-toast" class="toast" role="status" aria-live="polite" aria-atomic="true"><div class="toast-header"><strong class="me-auto">Kehribar Gece</strong><button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Kapat"></button></div><div class="toast-body">Form başarıyla doğrulandı. Bu bir örnektir; veri kaydedilmedi.</div></div></div>
+  <script src="../dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/demo.js"></script>
+</body>
+</html>
