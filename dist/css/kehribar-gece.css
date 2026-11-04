@@ -1,0 +1,28 @@
+/* Kehribar Gece — optional visual theme layer for Bootstrap 6 alpha.
+   Load AFTER dist/css/bootstrap.min.css. */
+:root,[data-bs-theme="dark"] {
+  --kg-bg: #0b1524;
+  --kg-surface: #142338;
+  --kg-border: #304159;
+  --kg-text: #edf0f5;
+  --kg-muted: #aab5c5;
+  --kg-amber: #e7ae5c;
+  --kg-lavender: #b4a1db;
+  --bs-body-bg: var(--kg-bg);
+  --bs-body-color: var(--kg-text);
+  --bs-primary: var(--kg-amber);
+  --bs-primary-rgb: 231,174,92;
+  --bs-border-color: var(--kg-border);
+  --bs-secondary-color: var(--kg-muted);
+  --bs-link-color: var(--kg-amber);
+  --bs-link-hover-color: #f8cf8a;
+}
+body { background: var(--kg-bg); color: var(--kg-text); }
+.kg-panel { background: var(--kg-surface); border: 1px solid var(--kg-border); border-radius: 1rem; }
+.kg-eyebrow { color: var(--kg-lavender); letter-spacing: .15em; text-transform: uppercase; font-size: .75rem; }
+.kg-accent { color: var(--kg-amber); }
+.kg-muted { color: var(--kg-muted); }
+.kg-button { background: var(--kg-amber); color: #152032; border: 1px solid var(--kg-amber); border-radius: .65rem; padding: .7rem 1.1rem; text-decoration: none; font-weight: 650; }
+.kg-button:hover { background: #f8cf8a; color: #152032; }
+.kg-outline { border: 1px solid var(--kg-border); border-radius: .65rem; color: var(--kg-text); padding: .7rem 1.1rem; text-decoration: none; }
+.kg-outline:hover { border-color: var(--kg-amber); color: var(--kg-amber); }
