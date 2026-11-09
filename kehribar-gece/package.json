@@ -1,0 +1,14 @@
+{
+  "name": "kehribar-gece-theme",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "package": "python3 package.py"
+  },
+  "devDependencies": {
+    "bootstrap": "5.3.8",
+    "sass": "1.78.0"
+  }
+}

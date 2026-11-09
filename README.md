@@ -1,36 +1,36 @@
-# Kehribar Gece — Bootstrap distribution & examples
+# Kehribar Gece
 
-Kehribar Gece, gece mavisi ve kehribar renkleriyle hazırlanmış, Bootstrap üzerine uygulanabilen bir **tema katmanı örneğidir**.
+Bootstrap **5.3.8** tabanlı yönetim paneli teması. Kehribar ve lavanta renkleri, Source Sans 3 fontu ve aydınlık / karanlık / sistem görünümü içerir.
 
-> **Current status:** This repository still contains the original Bootstrap 6.0.0-alpha.1 development source tree, build scripts and documentation. The existing `dist/css/bootstrap*.css` and `dist/js/bootstrap*.js` are upstream Bootstrap builds. `dist/css/kehribar-gece.css` is an optional custom theme override; it is **not** a compiled Bootstrap fork or a stable release.
+## Önizleme
 
-## Quick preview
+[Paneli açın](kehribar-gece/index.html). Dosyalar yereldir; kurulum veya CDN gerekmez.
 
-Open [examples/index.html](examples/index.html) in a browser, or host the repository as static files. The example uses local assets, with no CDN dependency.
+- [Bileşen kataloğu](kehribar-gece/components.html)
+- [Örnek sayfalar](kehribar-gece/examples.html)
+- [Boş başlangıç sayfası](kehribar-gece/blank.html)
 
-## Directory map
+## Geliştirme
 
-| Path | Purpose |
-| --- | --- |
-| [dist/css](dist/css) | Compiled upstream Bootstrap CSS plus optional Kehribar Gece CSS |
-| [dist/js](dist/js) | Compiled upstream Bootstrap JavaScript |
-| [examples](examples) | Static HTML theme demos |
-| [scss](scss), [js](js), [build](build), [site](site) | Upstream development sources and tooling retained for now |
-
-## Use in a static website
-
-```html
-<link rel="stylesheet" href="./dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="./dist/css/kehribar-gece.css">
-<script src="./dist/js/bootstrap.bundle.min.js"></script>
+```sh
+cd kehribar-gece
+npm ci
+npm run build
+npm run package
 ```
 
-Copy the referenced files into your site and adjust relative paths as needed. This sample theme is an initial preview, not a compatibility-tested release.
+ZIP çıktısı `kehribar-gece/releases/` klasörüne yazılır. Paket, Bootstrap JavaScript dosyası, fontlar ve lisansları içerir.
+[Yapılandırma ve kullanım](kehribar-gece/README.md) · [Dağıtım rehberi](kehribar-gece/PACKAGE-README.md)
 
-## Planned cleanup
+## Depo yapısı
 
-The long-term goal is a lightweight distribution-focused repository with prebuilt assets and HTML examples. Any removal of upstream source folders or large Git history should be reviewed separately; deleting files in a new commit **does not shrink existing Git history**.
+Asıl tema `kehribar-gece/` klasöründedir. Kendi bağımlılıkları Bootstrap 5.3.8 ve Sass 1.78.0 sürümlerine sabitlenmiştir.
+Depo kökündeki Bootstrap 6 alfa kaynakları ve araçları korunur. Temayı derlemek için tema klasöründeki komutları kullanın.
+`dist/css/kehribar-gece.css` önceki taslağa aittir. Yeni sayfalarda `kehribar-gece/css/kehribar-gece.min.css` kullanın; bu dosya Bootstrap CSS bileşenlerini de içerir.
 
-## Attribution and license
+## Kaynak ve lisans
 
-Based on [Bootstrap](https://github.com/twbs/bootstrap), copyright © Bootstrap Authors, licensed under the [MIT License](LICENSE). This is an independent personal theme experiment, not an official Bootstrap release or Bootstrap-maintained distribution.
+Özgün tema, `bootstrap-kehribar-gece-original` deposunun `custom-admin` dalındaki `0c956cbe5` commitinden aktarıldı.
+[Bootstrap](https://github.com/twbs/bootstrap), Bootstrap Authors, [MIT lisansı](LICENSE).
+Source Sans 3 fontunun SIL Open Font License dosyası tema klasöründe korunur.
+Bu proje bağımsız bir kişisel temadır.
